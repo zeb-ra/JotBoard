@@ -1,0 +1,67 @@
+.btn{
+    background-color: chartreuse;
+}
+
+#noteInput{
+    width: 700px;
+    height: 400px;
+}
+
+
+.resetBtn{
+    background-color: red;
+}
+
+.animated-btn {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Animation on click */
+.animated-btn:active {
+  transform: scale(1.2);
+  background-color: #0056b3;
+}
+
+
+
+.animated-btn-reset {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Animation on click */
+.animated-btn-reset:active {
+  transform: scale(1.2);
+  color: black;
+  background-color: white;
+}
+
+
+
+
+.container-fluid{
+    background-color: rgb(225, 232, 225);
+    height: 700px;
+}
+
+
+
+
+.noteBtn{
+  border-radius: 3px;
+}

@@ -1,0 +1,64 @@
+<br>
+
+
+
+<!-- this is how we move a div by creating offset of 4 grids-->
+<!-- 
+<div class="row">
+  <div class="col-md-4 offset-md-4 bg-info p-3">
+    Shifted div
+  </div>
+</div> -->
+
+
+<div class="container">
+<div class = "row">
+    <div class="col-md-6 offset-md-3">
+    <table class="table">
+    <thead>
+    <tr>
+        <th>
+            Notes
+        </th>
+    </tr>
+    </thead>
+
+    <tbody *ngFor="let todo of viewTodo">
+        <tr>
+
+            <div *ngIf="todo.isEditing">
+                <div class="col-md-9">
+                    <td><input name="temop" id="editInput" value="{{todo.body}}" [(ngModel)] = todo.body></td>
+                </div>
+
+                <div class="offset-md-9">
+                    <td><button class="btn btn-primary"  (click) = "updateNote(todo)">Update</button></td>
+                    <td><button class="btn btn-primary" (click)="cancelUpdateNote(todo)">Cancel</button></td>
+                </div>
+            </div>
+            
+            <div *ngIf="!todo.isEditing">
+                <!-- for text -->
+                <div class="col-md-9">
+                    <td>{{todo.body}}</td>
+                </div>
+
+                <!-- for buttons -->
+                <div class= "offset-md-9">
+                    <td><button class="btn btn-danger"  (click)="deleteNote(todo._id)">Delete</button></td>
+                    <td><button class="btn btn-primary" (click)="isEdit(todo)">Update</button></td>
+                </div>
+                
+
+            </div>
+
+        </tr>
+    </tbody>
+    </table>
+    </div>
+
+</div>
+
+</div>
+
+

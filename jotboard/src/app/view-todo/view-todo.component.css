@@ -1,0 +1,26 @@
+#toUpdate{
+    display: block;
+    height: 100px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+
+#confirmBtn, #cancelUpdateBtn{
+    margin-left: 10px;
+    /* padding-top: 1px; */
+    /* padding-bottom: 1px; */
+    /* border-radius: 10px; */
+    background-color: green;
+    color: white;
+}
+
+#editInput{
+    width: 500px;
+}
+
+
+.btn-primary, .btn-danger{
+    border-radius: 3px;
+}

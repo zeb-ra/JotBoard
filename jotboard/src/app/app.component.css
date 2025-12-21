@@ -1,0 +1,47 @@
+.headingDiv{
+    
+    background-color: aquamarine;
+}
+
+.logoIcon{
+    margin-right: 100px;
+}
+
+.navbar{
+    background-color:aliceblue;
+}
+
+
+#navbarLogo{
+    width: 160px;
+    height: 50px;
+}
+
+nav {
+    background-color:aliceblue;
+}
+
+
+a{
+    text-decoration: none;
+    color:rgb(63, 60, 60);
+}
+
+
+.navbarElement{
+  padding: 10px 25px;
+  font-size: 20px;
+  color: rgb(238, 238, 238);
+  background-color: rgb(126, 125, 125);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+
+.navbarElement:active{
+  transform: scale(1.2);
+  color: black;
+  background-color: white;
+}
